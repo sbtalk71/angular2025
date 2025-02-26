@@ -14,13 +14,13 @@ export const UserStore = signalStore(
   withMethods(store => ({
     addUser(user: User) {
       //store.users.set([...store.users(), user]);
-      patchState(store,({users})=>({users:{...users,user}}))
+      patchState(store,{users:[...store.users(),user]})
     },
     updateUser(updatedUser: User) {
-      store.users.set(store.users().map(u => u.id === updatedUser.id ? updatedUser : u));
+      patchState(store,{users:store.users().map(u => u.id === updatedUser.id ? updatedUser : u)});
     },
     deleteUser(id: number) {
-      store.users.set(store.users().filter(u => u.id !== id));
+      patchState(store,{users:store.users().filter(u => u.id !== id)});
     }
   }))
 );

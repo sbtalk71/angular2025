@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { UserStore } from '../../store/user.store';
 import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -18,9 +18,16 @@ import { CommonModule } from '@angular/common';
     <button [routerLink]="['/users/add']">Add User</button>
   `,
 })
-export class UserListComponent {
-  userStore = inject(UserStore);
+export class UserListComponent implements OnInit{
 
+  userStore = inject(UserStore);
+  ngOnInit(): void {
+      console.log(this.userStore.users());
+  }
+ 
+
+ 
+  
   deleteUser(id: number) {
     this.userStore.deleteUser(id);
   }
