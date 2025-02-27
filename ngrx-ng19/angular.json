@@ -180,6 +180,95 @@
           }
         }
       }
+    },
+    "signalstore-todo": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/signalstore-todo",
+      "sourceRoot": "projects/signalstore-todo/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/signalstore-todo",
+            "index": "projects/signalstore-todo/src/index.html",
+            "browser": "projects/signalstore-todo/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/signalstore-todo/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/signalstore-todo/public"
+              }
+            ],
+            "styles": [
+              "projects/signalstore-todo/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "signalstore-todo:build:production"
+            },
+            "development": {
+              "buildTarget": "signalstore-todo:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/signalstore-todo/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/signalstore-todo/public"
+              }
+            ],
+            "styles": [
+              "projects/signalstore-todo/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   },
   "cli": {
