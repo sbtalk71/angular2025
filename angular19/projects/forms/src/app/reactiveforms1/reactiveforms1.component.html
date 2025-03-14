@@ -1,0 +1,19 @@
+<h1>Reactive Form with FormGroup</h1>
+<h3>{{userForm.value|json}}</h3>
+<form [formGroup]="userForm">
+       <div>
+        <label for="username">Name</label>
+        <input type="text" name="username" formControlName="userName">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" formControlName="password">
+    </div>
+    <div>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" formControlName="confirmPassword">
+    </div>
+    <button type="submit">Submit</button>
+    <button type="button" (click)="loadData()">Load Data</button>
+    <button type="button" (click)="updateField()">Update Data</button>
+</form>
