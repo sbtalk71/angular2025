@@ -1,4 +1,5 @@
 import { Component, computed, signal } from '@angular/core';
+import { ExampleComponent } from "../example/example.component";
 
 @Component({
   selector: 'app-signals',
