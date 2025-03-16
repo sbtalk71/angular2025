@@ -1,0 +1,9 @@
+.demo{
+    background-color:aqua;
+    border: 2px;
+    border-color: green;
+    width: 30%;
+    height: 100px;
+    position: relative;
+    margin-top: 50px;
+}

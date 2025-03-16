@@ -1,0 +1,21 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-child2',
+  standalone:true,
+  imports: [],
+  template: `
+    <div class="demo">
+      child2 works!
+      <p>Counter Value={{counter.count}}</p>
+      
+    </div>
+  `,
+  styleUrl: './child2.component.css',
+  changeDetection:ChangeDetectionStrategy.OnPush
+})
+export class Child2Component {
+@Input() counter!:any;
+
+
+}

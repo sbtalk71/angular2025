@@ -92,16 +92,25 @@
         }
       }
     },
+<<<<<<< Updated upstream
     "forms": {
       "projectType": "application",
       "schematics": {},
       "root": "projects/forms",
       "sourceRoot": "projects/forms/src",
+=======
+    "change-detection": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/change-detection",
+      "sourceRoot": "projects/change-detection/src",
+>>>>>>> Stashed changes
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< Updated upstream
             "outputPath": "dist/forms",
             "index": "projects/forms/src/index.html",
             "browser": "projects/forms/src/main.ts",
@@ -117,6 +126,23 @@
             ],
             "styles": [
               "projects/forms/src/styles.css"
+=======
+            "outputPath": "dist/change-detection",
+            "index": "projects/change-detection/src/index.html",
+            "browser": "projects/change-detection/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/change-detection/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/change-detection/public"
+              }
+            ],
+            "styles": [
+              "projects/change-detection/src/styles.css"
+>>>>>>> Stashed changes
             ],
             "scripts": []
           },
@@ -148,10 +174,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< Updated upstream
               "buildTarget": "forms:build:production"
             },
             "development": {
               "buildTarget": "forms:build:development"
+=======
+              "buildTarget": "change-detection:build:production"
+            },
+            "development": {
+              "buildTarget": "change-detection:build:development"
+>>>>>>> Stashed changes
             }
           },
           "defaultConfiguration": "development"
@@ -166,6 +199,7 @@
               "zone.js",
               "zone.js/testing"
             ],
+<<<<<<< Updated upstream
             "tsConfig": "projects/forms/tsconfig.spec.json",
             "assets": [
               {
@@ -175,12 +209,24 @@
             ],
             "styles": [
               "projects/forms/src/styles.css"
+=======
+            "tsConfig": "projects/change-detection/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/change-detection/public"
+              }
+            ],
+            "styles": [
+              "projects/change-detection/src/styles.css"
+>>>>>>> Stashed changes
             ],
             "scripts": []
           }
         }
       }
     },
+<<<<<<< Updated upstream
     "deferable": {
       "projectType": "application",
       "schematics": {},
@@ -302,11 +348,23 @@
       },
       "root": "projects/resource-api",
       "sourceRoot": "projects/resource-api/src",
+=======
+    "change-detection2": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "inlineTemplate": true
+        }
+      },
+      "root": "projects/change-detection2",
+      "sourceRoot": "projects/change-detection2/src",
+>>>>>>> Stashed changes
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< Updated upstream
             "outputPath": "dist/resource-api",
             "index": "projects/resource-api/src/index.html",
             "browser": "projects/resource-api/src/main.ts",
@@ -322,6 +380,23 @@
             ],
             "styles": [
               "projects/resource-api/src/styles.css"
+=======
+            "outputPath": "dist/change-detection2",
+            "index": "projects/change-detection2/src/index.html",
+            "browser": "projects/change-detection2/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/change-detection2/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/change-detection2/public"
+              }
+            ],
+            "styles": [
+              "projects/change-detection2/src/styles.css"
+>>>>>>> Stashed changes
             ],
             "scripts": []
           },
@@ -353,10 +428,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< Updated upstream
               "buildTarget": "resource-api:build:production"
             },
             "development": {
               "buildTarget": "resource-api:build:development"
+=======
+              "buildTarget": "change-detection2:build:production"
+            },
+            "development": {
+              "buildTarget": "change-detection2:build:development"
+>>>>>>> Stashed changes
             }
           },
           "defaultConfiguration": "development"
@@ -371,6 +453,7 @@
               "zone.js",
               "zone.js/testing"
             ],
+<<<<<<< Updated upstream
             "tsConfig": "projects/resource-api/tsconfig.spec.json",
             "assets": [
               {
@@ -380,6 +463,17 @@
             ],
             "styles": [
               "projects/resource-api/src/styles.css"
+=======
+            "tsConfig": "projects/change-detection2/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/change-detection2/public"
+              }
+            ],
+            "styles": [
+              "projects/change-detection2/src/styles.css"
+>>>>>>> Stashed changes
             ],
             "scripts": []
           }
