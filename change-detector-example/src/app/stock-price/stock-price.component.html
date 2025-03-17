@@ -1,0 +1,5 @@
+<h2>Live Stock Price: ₹{{ stockPrice }}</h2>
+<button (click)="markForCheck()">Enable Manual Detection</button>
+<button (click)="toggleChangeDetection()">
+  {{ isManualUpdate ? 'Stop Auto Detection' : 'Resume Auto Detection' }}
+</button>

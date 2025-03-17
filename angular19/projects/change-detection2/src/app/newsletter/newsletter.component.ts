@@ -1,4 +1,5 @@
-import {Component,Input,Output} from '@angular/core'
+import {Component,EventEmitter,Input,Output} from '@angular/core'
+import { User } from '../user';
 @Component({
     selector: 'newsletter',
     template: `
@@ -24,7 +25,7 @@ import {Component,Input,Output} from '@angular/core'
 export class NewsletterComponent  {
 
     @Input()
-    user: User;
+    user!: User;
 
     @Output()
     subscribe = new EventEmitter();
