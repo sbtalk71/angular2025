@@ -5,10 +5,11 @@ import { ToDo } from './store/todos.reducers';
 import { Observable } from 'rxjs';
 import {addTodo,removeToDo,toggleToDo} from './store/todos.actions'
 import { CommonModule } from '@angular/common';
+import { TodoComponent } from './todo/todo.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,CommonModule],
+  imports: [CommonModule,TodoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
