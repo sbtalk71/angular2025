@@ -94,6 +94,7 @@
     },
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "forms": {
       "projectType": "application",
       "schematics": {},
@@ -102,12 +103,17 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "change-detection": {
       "projectType": "application",
       "schematics": {},
       "root": "projects/change-detection",
       "sourceRoot": "projects/change-detection/src",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -116,6 +122,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
             "outputPath": "dist/forms",
@@ -136,6 +143,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             "outputPath": "dist/change-detection",
             "index": "projects/change-detection/src/index.html",
             "browser": "projects/change-detection/src/main.ts",
@@ -152,6 +161,9 @@
             "styles": [
               "projects/change-detection/src/styles.css"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -188,6 +200,7 @@
             "production": {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "buildTarget": "forms:build:production"
             },
             "development": {
@@ -195,11 +208,16 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
               "buildTarget": "change-detection:build:production"
             },
             "development": {
               "buildTarget": "change-detection:build:development"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -219,6 +237,7 @@
             ],
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "tsConfig": "projects/forms/tsconfig.spec.json",
             "assets": [
               {
@@ -231,6 +250,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             "tsConfig": "projects/change-detection/tsconfig.spec.json",
             "assets": [
               {
@@ -241,6 +262,9 @@
             "styles": [
               "projects/change-detection/src/styles.css"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -250,6 +274,7 @@
         }
       }
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "deferable": {
@@ -376,6 +401,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "change-detection2": {
       "projectType": "application",
       "schematics": {
@@ -386,6 +413,9 @@
       "root": "projects/change-detection2",
       "sourceRoot": "projects/change-detection2/src",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -394,6 +424,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
             "outputPath": "dist/resource-api",
@@ -414,6 +445,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             "outputPath": "dist/change-detection2",
             "index": "projects/change-detection2/src/index.html",
             "browser": "projects/change-detection2/src/main.ts",
@@ -430,6 +463,9 @@
             "styles": [
               "projects/change-detection2/src/styles.css"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -466,6 +502,7 @@
             "production": {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "buildTarget": "resource-api:build:production"
             },
             "development": {
@@ -473,11 +510,16 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
               "buildTarget": "change-detection2:build:production"
             },
             "development": {
               "buildTarget": "change-detection2:build:development"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -497,6 +539,7 @@
             ],
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "tsConfig": "projects/resource-api/tsconfig.spec.json",
             "assets": [
               {
@@ -509,6 +552,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             "tsConfig": "projects/change-detection2/tsconfig.spec.json",
             "assets": [
               {
@@ -518,6 +563,7 @@
             ],
             "styles": [
               "projects/change-detection2/src/styles.css"
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
@@ -636,6 +682,8 @@
             ],
             "styles": [
               "projects/smart-dumb/src/styles.css"
+=======
+>>>>>>> Stashed changes
             ],
             "scripts": []
           }
