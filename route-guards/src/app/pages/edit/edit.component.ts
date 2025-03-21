@@ -28,4 +28,12 @@ export class EditComponent {
     }
     return true;
   }
+  canExit() : boolean {
+ 
+    if (confirm("Do you wish to Please confirm")) {
+        return true
+      } else {
+        return false
+      }
+    }
 }

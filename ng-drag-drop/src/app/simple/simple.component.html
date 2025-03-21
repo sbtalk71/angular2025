@@ -1,0 +1,13 @@
+<div cdkDrag>
+    Drag me around
+</div>
+
+<div cdkDrag>
+    <div cdkDragHandle>Drag me around</div>
+  </div>
+
+  <div cdkDropList>
+    <div cdkDrag *ngFor="let item of items">
+      {{item}}
+    </div>
+  </div>
