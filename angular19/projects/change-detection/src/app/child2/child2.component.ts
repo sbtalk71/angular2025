@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { AfterViewChecked, ChangeDetectionStrategy, Component, DoCheck, Input } from '@angular/core';
 
 @Component({
   selector: 'app-child2',
@@ -14,8 +14,13 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   styleUrl: './child2.component.css',
   changeDetection:ChangeDetectionStrategy.OnPush
 })
-export class Child2Component {
+export class Child2Component  implements DoCheck{
 @Input() counter!:any;
 
-
+constructor(){
+  console.log("Child2Component refreshed..");
+}
+ngDoCheck(){
+  console.log("Child2Component refreshed..");
+}
 }

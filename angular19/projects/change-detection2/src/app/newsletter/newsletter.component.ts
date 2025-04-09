@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
 import {Component,EventEmitter,Input,Output} from '@angular/core'
 import { User } from '../user';
+=======
+import {Component,Input,Output} from '@angular/core'
+>>>>>>> Stashed changes
 @Component({
     selector: 'newsletter',
     template: `
@@ -25,7 +29,11 @@ import { User } from '../user';
 export class NewsletterComponent  {
 
     @Input()
+<<<<<<< Updated upstream
     user!: User;
+=======
+    user: User;
+>>>>>>> Stashed changes
 
     @Output()
     subscribe = new EventEmitter();

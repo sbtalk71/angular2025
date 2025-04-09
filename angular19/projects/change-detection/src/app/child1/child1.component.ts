@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { AfterViewChecked, ChangeDetectionStrategy, ChangeDetectorRef, Component, DoCheck, Input } from '@angular/core';
 import { Child2Component } from '../child2/child2.component';
 
 @Component({
@@ -14,9 +14,17 @@ import { Child2Component } from '../child2/child2.component';
     
   `,
   styleUrl: './child1.component.css',
-  changeDetection:ChangeDetectionStrategy.Default
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
-export class Child1Component {
+export class Child1Component implements DoCheck{
 
+  constructor( private cdr: ChangeDetectorRef){
+    //this.cdr.detach();
+    console.log("Child1Component refreshed..")
+  }
   @Input() counter!:any;
+
+  ngDoCheck(){
+    console.log("Child1Component refreshed..");
+  }
 }
