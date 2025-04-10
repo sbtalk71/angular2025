@@ -1,0 +1,24 @@
+<div style="max-width: 400px; margin: auto">
+  <h2>User Form</h2>
+  <form [formGroup]="form">
+    <div>
+      <label>Name:</label>
+      <input formControlName="name" />
+    </div>
+    <br />
+    <div>
+      <label>Email:</label>
+      <input formControlName="email" />
+    </div>
+    <br />
+    <button type="button" (click)="onReset()">Reset</button>
+  </form>
+
+  <hr />
+
+  <div>
+    <h3>Live Store Values:</h3>
+    <p><strong>Name:</strong> {{ name$ | async }}</p>
+    <p><strong>Email:</strong> {{ email$ | async }}</p>
+  </div>
+</div>
